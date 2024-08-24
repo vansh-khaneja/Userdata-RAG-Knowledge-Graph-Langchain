@@ -48,9 +48,10 @@ MERGE (person)-[:INTERACTED_WITH_SUPPORT]->(:CustomerSupport {interactions: COAL
 
 graph.query(users_query)
 
-
-chain = GraphCypherQAChain.from_llm(graph=graph, llm=llm, verbose=True)
-
+def response_generation(query):
+    chain = GraphCypherQAChain.from_llm(graph=graph, llm=llm, verbose=True)
+    answer = chain.run(query+ f"return with proper naming conventions what you get as input rephrase it with this {user_query}")
+    return answer
 
 st.set_page_config(page_title="Knowledge Graph Chatbot", page_icon=":robot_face:")
 
@@ -70,7 +71,7 @@ st.markdown("<hr/>", unsafe_allow_html=True)
 user_query = st.text_input("Enter your question:", placeholder="E.g., Which devices is uesd by Alice to watch shows?")
 
 if st.button("Ask"):
-    bot_response = chain.run(user_query+ f"return with proper naming conventions what you get as input rephrase it with this {user_query}")
+    bot_response = response_generation(user_query)
 
     
     st.markdown(f"""
@@ -79,5 +80,4 @@ if st.button("Ask"):
         <p style="color: #333;">{bot_response}</p>
     </div>
     """, unsafe_allow_html=True)
-
 
