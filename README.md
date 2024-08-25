@@ -1,8 +1,6 @@
 # Userdata RAG Using Knowledge Graph and LangChain
 This project implements multi-query retrieval using Matryoshka Representation Learning (MRL) embeddings with `text-embedding-3-small` and `text-embedding-3-large`. The embeddings are stored and queried using the [Qdrant](https://qdrant.tech/) vector database. To learn more about the project please refer this [article](https://medium.com/@vanshkhaneja/multi-stage-vector-querying-using-matryoshka-representation-learning-mrl-in-qdrant-ddbe425d88f4).
 
-![Alt Text - description of the image](https://github.com/vansh-khaneja/Userdata-RAG-Knowledge-Graph-Langchain/blob/main/graph2.png?raw=true)
-
 
 ## Table of Contents
 
