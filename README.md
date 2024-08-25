@@ -20,7 +20,7 @@ In this project, we used Matryoshka Representation Learning embeddings for effic
 
 - Fast and efficient way for data retrieval
 - Supports `llama 3` and other models with groq
-- Two stage retrieval for better searching
+- Better Graphs Visualtization
 - Scalable and high-performance retrieval system
 
 ## Installation
