@@ -1,5 +1,5 @@
 # Userdata RAG Using Knowledge Graph and LangChain
-This project implements multi-query retrieval using Matryoshka Representation Learning (MRL) embeddings with `text-embedding-3-small` and `text-embedding-3-large`. The embeddings are stored and queried using the [Qdrant](https://qdrant.tech/) vector database. To learn more about the project please refer this [article](https://medium.com/@vanshkhaneja/multi-stage-vector-querying-using-matryoshka-representation-learning-mrl-in-qdrant-ddbe425d88f4).
+This project implements Retrieval Augmented Generation using Neo4j knowledge grphs and Langhcain framework. Using Llama 3 as the language model for beter graphs and response generation. To learn more about the project please refer this [article](...).
 
 
 ## Table of Contents
@@ -12,7 +12,7 @@ This project implements multi-query retrieval using Matryoshka Representation Le
 
 ## Introduction
 
-In this project, we used Matryoshka Representation Learning embeddings for efficient multi-query retrieval. The embeddings are generated using `text-embedding-3-small` and `text-embedding-3-large` models and stored in the Qdrant vector database. This approach allows for scalable and accurate retrieval of relevant information from large datasets.
+This repository will guide you in buiding a user ineractive RAG application with the help of ```knowledge graphs``` and ```langchain```. Using ```Llama 3``` as the language model and ```streamlit``` to create a user interative web inteface.
 
 ## Features
 
