@@ -68,7 +68,7 @@ LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/vansh-khaneja/test
 3.Execute the ```main.py``` file by running this command in terminal.
 
 ```sh
-python main.py
+streamlit run main.py
 ```
 
 
