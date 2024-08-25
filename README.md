@@ -52,25 +52,25 @@ In this project, we used Matryoshka Representation Learning embeddings for effic
 ## Execution
 1.Create a .env file and store all the credentials in it.
 
-    ```sh
-    NEO4J_URI="YOUR_NEO4J_URL"
-    NEO4J_USERNAME="YOUR_NEO4J_USERNAME"
-    NEO4J_PASSWORD="YOUR_NEO4J_PASSWORD"
-    GROQ_API_KEY="YOUR_GROQ_API_KEY"
-    ```
+```sh
+NEO4J_URI="YOUR_NEO4J_URL"
+NEO4J_USERNAME="YOUR_NEO4J_USERNAME"
+NEO4J_PASSWORD="YOUR_NEO4J_PASSWORD"
+GROQ_API_KEY="YOUR_GROQ_API_KEY"
+```
 
 
 2.Download the dataset for this project [here](https://www.kaggle.com/datasets/arnavsmayan/amazon-prime-userbase-dataset) or you can try with your own dataset. Just upload it over github and use the repo link.
 
 ```sh
-    LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/vansh-khaneja/test5/main/amazon_prime_users.csv' AS row
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/vansh-khaneja/test5/main/amazon_prime_users.csv' AS row
 ```
 
 
 3.Execute the ```main.py``` file by running this command in terminal.
 
 ```sh
-    python main.py
+python main.py
 ```
 
 
